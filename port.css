@@ -1,0 +1,390 @@
+ html {
+     scroll-behavior: smooth;
+ }
+
+ .secao {
+     display: none;
+     padding: 20px;
+ }
+
+ .text-3d h1 {
+     color: white;
+     text-shadow:1px 1px 0 black, 2px 2px 0 black, 3px 3px 0 black, 4px 4px 0 black, 5px 5px 0 black;
+ }
+
+ .menu-lateral {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 200px;
+     height: 100vh;
+     background-color: hwb(60 22% 77%);
+     color: white;
+     padding-top: 20px;
+ }
+
+ .perfil {
+     text-align: center;
+     padding: 10px;
+ }
+
+ .foto-perfil {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     object-fit: cover;
+ }
+
+ .menu-label {
+     display: none;
+ }
+
+ .navegacao .menu {
+     list-style: none;
+     padding: 0;
+ }
+
+ .menu li {
+     padding: 10px;
+     cursor: pointer;
+ }
+
+ .menu li:hover {
+     background-color: #333;
+ }
+
+ .conteudo {
+     margin-left: 220px;
+     padding: 20px;
+ }
+
+ .whatsapp-flutuante {
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+ }
+
+ .iconewpp {
+     width: 50px;
+     height: 50px;
+ }
+
+ /*CSS ANTIGO SENDO APLICADO*/
+
+ ESSE É O LINK DO CSS TESTE.CSS
+
+ /* Reset básico */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ html {
+     scroll-behavior: smooth;
+ }
+
+ body {
+     font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+     display: flex;
+     background-image: linear-gradient(to right, hwb(0 100% 0%), lab(36.15% 3.69 1.33));
+     color: #f5f5f5;
+     min-height: 100vh;
+     overflow-x: hidden;
+ }
+
+ img {
+     width: 512px;
+     height: 288px;
+     display: block;
+     margin: 0 auto;
+     border-radius: 10%;
+
+ }
+
+ /* Efeito de "salto" em todas as imagens, exceto o WhatsApp */
+ img {
+     transition: transform 0.3s ease;
+     border-radius: color white;
+     border-bottom: hwb(0 0% 100%);
+     cursor: pointer;
+     border: hsl(309, 39%, 94%);
+
+ }
+
+ /* Efeito hover apenas se não for a classe .iconewpp */
+ img:not(.iconewpp):hover {
+     transform: scale(1.05);
+     box-shadow: hwb(200 95% 3%);
+     border-bottom: hsl(200, 55%, 96%);
+     cursor: pointer;
+ }
+
+ /* Menu lateral */
+ .menu-lateral {
+     width: 250px;
+     height: 100%;
+     background-image: url('imagens/freepik__the-style-is-3d-model-with-octane-render-volumetri__20814.png');
+     padding: 30px 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     position: fixed;
+     
+ }
+
+ .foto-perfil {
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     object-fit: cover;
+     border: 4px solid hsl(0, 63%, 97%);
+     margin-bottom: 15px;
+ }
+
+ .menu-lateral h2 {
+     font-size: 20px;
+     margin-bottom: 30px;
+     text-align: center;
+     color: #fff;
+ }
+
+ /* Menu toggle responsivo */
+ #menu-toggle {
+     display: none;
+ }
+
+ .menu-label {
+     display: none;
+     font-size: 18px;
+     margin-top: 10px;
+     cursor: pointer;
+     color: white;
+ }
+
+ /* Navegação */
+ .navegacao ul {
+     list-style: none;
+     width: 100%;
+     padding: 0;
+ }
+
+ .navegacao li {
+     margin-bottom: 10px;
+ }
+
+ .navegacao a {
+     display: block;
+     padding: 10px 15px;
+     text-decoration: none;
+     color: hsl(0, 100%, 98%);
+     border-radius: 6px;
+     transition: background 0.3s, color 0.3s;
+ }
+
+ .navegacao a:hover,
+ .navegacao a.ativo {
+     background-color: hwb(224 10% 19%);
+     color: lab(100% 0.01 -0.01);
+     font-weight: bold;
+ }
+
+ /* Conteúdo principal */
+ .conteudo {
+     flex: 1;
+     background-size: cover;
+     padding: 100px 60px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: flex-start;
+     text-align: center;
+ }
+
+
+ #inicio h1 {
+     font-size: 70px;
+     font-weight: bold;
+     line-height: 1.3;
+     margin-bottom: 40px;
+     color: #ffffff;
+     text-shadow:1px 1px 0 black, 2px 2px 0 black, 3px 3px 0 black, 4px 4px 0 black, 5px 5px 0 black;
+     text-align: center;
+ }
+ 
+
+ .botao-contato {
+     display: inline-block;
+     padding: 14px 32px;
+     border: 2px solid hwb(48 92% 6%);
+     border-radius: 30px;
+     text-decoration: none;
+     color: hsl(51, 93%, 47%);
+     font-weight: bold;
+     transition: background 0.3s, color 0.3s;
+ }
+
+ .botao-contato:hover {
+     background-color: hwb(60 88% 9%);
+     color: #080808;
+ }
+
+ /* WhatsApp flutuante */
+ .whatsapp-flutuante {
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     z-index: 999;
+     transition: transform 0.2s;
+ }
+
+ .iconewpp {
+     width: 40px;
+     height: auto;
+     border-radius: 100px;
+ }
+
+ .whatsapp-flutuante:hover {
+     transform: scale(1.1);
+ }
+
+ /* Seções */
+ section {
+     max-width: 800px;
+     margin: 50px auto;
+     padding: 20px;
+     background-color: transparent;
+     border-radius: 12px;
+ }
+
+ section h2 {
+     margin-bottom: 15px;
+     font-size: 28px;
+     color: #fbfeff;
+ }
+
+ section p {
+     font-size: 18px;
+     line-height: 1.6;
+ }
+
+ h1 {
+     font-size: 7rem
+ }
+
+ /*Deixando os icones da redes sociais pequenos*/
+ .redes-sociais {
+     list-style: none;
+     padding: 0;
+ }
+
+ .redes-sociais li {
+     display: flex;
+     justify-content: center;
+     margin-right: 15px;
+     padding-right: 15px;
+ }
+
+ .redes-sociais a {
+
+     align-items: center;
+     color: #ffffff;
+     text-decoration: none;
+     display: inline-block;
+ }
+
+ .icone-social {
+     width: 50px;
+     height: 50px;
+     margin-right: 150px;
+     align-items: center;
+     border-radius: 100px;
+     display: inline-block;
+ }
+
+
+ /* Redes sociais */
+ .redes-sociais {
+     list-style: none;
+     padding: 0;
+ }
+
+
+ /* Responsivo */
+ @media (max-width: 768px) {
+     body {
+         flex-direction: column;
+     }
+
+     .menu-lateral {
+         width: 100%;
+         padding: 10px 20px;
+         flex-direction: column;
+         align-items: flex-start;
+     }
+
+     .foto-perfil,
+     .menu-lateral h2 {
+         display: none;
+     }
+
+     .menu-label {
+         display: block;
+         margin-bottom: 10px;
+     }
+
+     .navegacao .menu {
+         display: none;
+         flex-direction: column;
+         width: 100%;
+     }
+
+     #menu-toggle:checked+.menu-label+nav .menu {
+         display: flex;
+     }
+
+     .navegacao a {
+         padding: 10px;
+     }
+
+     .conteudo {
+         padding: 60px 20px;
+     }
+
+     .inicio h1 {
+         font-size: 32px;
+     }
+ }
+
+ .carousel-indicators li {
+     border: 5px;
+     width: 10px;
+     height: 10px;
+     border-radius: 100px;
+     display: flex;
+ }
+
+ .logogit {
+     width: 50px;
+     height: 50px;
+     display: inline-block;
+     margin: 20px;
+     padding-left: 5px;
+ }
+
+ .linkedinlogo {
+     width: 50px;
+     height: 50px;
+     background-color: transparent;
+     display: inline-block;
+     margin: 20px;
+
+ }
+
+ .logoemail {
+     width: 50px;
+     height: 50px;
+     display: inline-block;
+     margin: 20px;
+ }
+  
